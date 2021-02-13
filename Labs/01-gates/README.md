@@ -17,7 +17,7 @@ end architecture dataflow;
 link na vhdl: https://www.edaplayground.com/x/NFdh
 
 
-Distributive laws simulation, 
+Distributive laws simulation
 ```vhdl
 architecture dataflow of gates is
 begin
