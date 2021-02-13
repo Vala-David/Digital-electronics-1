@@ -4,10 +4,7 @@ link na repozitář:
 https://github.com/Vala-David/Digital-electronics-1
 
 
-De Morgan's simulation, 
-link na vhdl:
-https://www.edaplayground.com/x/NFdh
-
+De Morgan's simulation 
 ```vhdl
 architecture dataflow of gates is
 begin
@@ -17,11 +14,10 @@ begin
 
 end architecture dataflow;
 ```
+link na vhdl: https://www.edaplayground.com/x/NFdh
 
-Distributive laws simulation, 
-link na vhdl:
-https://www.edaplayground.com/x/weMs
 
+Distributive laws simulation
 ```vhdl
 architecture dataflow of gates is
 begin
@@ -36,7 +32,7 @@ begin
 
 end architecture dataflow;
 ```
-
+link na vhdl: https://www.edaplayground.com/x/weMs
 
 
 
