@@ -2,6 +2,7 @@ Cvičení-2
 
 link na repozitář: https://github.com/Vala-David/Digital-electronics-1 
 
+1.úkol
 ```
 2-bit 
 |0|00|00|0|1|0|
@@ -21,3 +22,12 @@ link na repozitář: https://github.com/Vala-David/Digital-electronics-1
 |14|11|10|1|0|0|
 |15|11|11|0|1|0|
 ```
+2.úkol
+
+
+
+
+3.úkol
+
+
+
