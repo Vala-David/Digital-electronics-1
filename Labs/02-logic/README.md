@@ -121,3 +121,15 @@ CODE-TESTBENCH.VHD
         assert ((s_B_greater_A = '0') and (s_B_equals_A = '0') and (s_B_less_A = '1'))
         report "Test failed for input combination: 0011, 1100" severity error;
 ```
+```
+CONSOLE OUTPUT
+
+analyze design.vhd
+analyze testbench.vhd
+elaborate tb_comparator_2bit
+testbench.vhd:51:9:@0ms:(report note): Stimulus process started
+testbench.vhd:75:9:@500ns:(assertion error): Test failed for input combination: 0111, 0011
+testbench.vhd:99:9:@1us:(report note): Stimulus process finished
+Finding VCD file...
+./dump.vcd
+```
