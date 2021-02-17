@@ -44,6 +44,7 @@ link na repozitář: https://github.com/Vala-David/Digital-electronics-1
 |8|1100|0100|1|0|0|
 |9|0011|1100|0|0|1|
 ```
+```
 code - desigh.vhd
 
 entity comparator_2bit is
