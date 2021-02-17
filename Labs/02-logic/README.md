@@ -75,7 +75,7 @@ begin
 
 end architecture Behavioral;
 ```
-```
+```vhdl
 CODE-TESTBENCH.VHD
 
 	-- First test values
