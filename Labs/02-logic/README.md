@@ -44,3 +44,28 @@ link na repozitář: https://github.com/Vala-David/Digital-electronics-1
 |8|1100|0100|1|0|0|
 |9|0011|1100|0|0|1|
 ```
+entity comparator_2bit is
+    port(
+        a_i           : in  std_logic_vector(4 - 1 downto 0);
+
+		-- COMPLETE ENTITY DECLARATION
+        b_i		      : in  std_logic_vector(4 - 1 downto 0);
+        B_greater_A_o : out std_logic;
+        B_equals_A_o  : out std_logic;
+        
+
+        B_less_A_o    : out std_logic       -- B is less than A
+    );
+end entity comparator_2bit;
+
+architecture Behavioral of comparator_2bit is
+begin
+    B_greater_A_o <= '1' when (b_i > a_i) else '0';
+
+    -- WRITE "EQUALS" AND "LESS" ASSIGNMENTS HERE
+    B_equals_A_o <= '1' when (b_i = a_i) else '0';
+    B_less_A_o   <= '1' when (b_i < a_i) else '0';
+
+end architecture Behavioral;
+```
+
