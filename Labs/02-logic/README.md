@@ -2,6 +2,7 @@ Cvičení-2
 
 link na repozitář: https://github.com/Vala-David/Digital-electronics-1 
 
+```
 2-bit 
 |0|00|00|0|1|0|
 |1|00|01|0|0|1|
@@ -19,3 +20,4 @@ link na repozitář: https://github.com/Vala-David/Digital-electronics-1
 |13|11|01|1|0|0|
 |14|11|10|1|0|0|
 |15|11|11|0|1|0|
+```
