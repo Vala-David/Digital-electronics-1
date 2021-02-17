@@ -46,9 +46,7 @@ link na vhdl: https://www.edaplayground.com/x/fcq4
 |8|1100|0100|1|0|0|
 |9|0011|1100|0|0|1|
 ```
-```
-CODE-DESIGN.VHD
-
+```vhdl
 entity comparator_2bit is
     port(
         a_i           : in  std_logic_vector(4 - 1 downto 0);
