@@ -31,6 +31,8 @@ link na repozitář: https://github.com/Vala-David/Digital-electronics-1
 
 3.úkol
 
+link na vhdl: https://www.edaplayground.com/x/fcq4
+
 ```
 4-bit
 |0|0000|0000|0|1|0|
