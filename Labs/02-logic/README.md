@@ -122,7 +122,7 @@ CODE-TESTBENCH.VHD
         assert ((s_B_greater_A = '0') and (s_B_equals_A = '0') and (s_B_less_A = '1'))
         report "Test failed for input combination: 0011, 1100" severity error;
 ```
-```
+```vhdl
 CONSOLE OUTPUT
 
 analyze design.vhd
