@@ -45,7 +45,7 @@ link na repozitář: https://github.com/Vala-David/Digital-electronics-1
 |9|0011|1100|0|0|1|
 ```
 ```
-code - desigh.vhd
+CODE-DESIGN.VHD
 
 entity comparator_2bit is
     port(
@@ -74,4 +74,6 @@ begin
 
 end architecture Behavioral;
 ```
-
+```
+CODE-TESTBENCH.VHD
+```
