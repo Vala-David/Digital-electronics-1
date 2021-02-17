@@ -1,3 +1,3 @@
-Cvičení 2
+Cvičení-2
 
 link na repozitář: 
