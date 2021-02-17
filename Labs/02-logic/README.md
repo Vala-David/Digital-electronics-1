@@ -32,6 +32,7 @@ link na repozitář: https://github.com/Vala-David/Digital-electronics-1
 3.úkol
 
 ```
+4-bit
 |0|0000|0000|0|1|0|
 |1|0000|0001|0|0|1|
 |2|0000|0010|0|0|1|
