@@ -26,8 +26,8 @@ link na repozitář: https://github.com/Vala-David/Digital-electronics-1
 
 2.úkol
 
-
-Equals_sop = [/b1./b0./a1./a0] + [/b1.b0./a1.a0] + [b1./b0.a1./a0] + [b1.b0.a1.a0]
+Equals_sop = (/b1./b0./a1./a0)+(/b1.b0./a1.a0)+(b1./b0.a1./a0)+(b1.b0.a1.a0)
+Less_sop = (b1+b0+a1+a0).(b1+/b0+a1+a0).(b1+/b0+a1+/a0).(/b1+b0+a1+a0).(/b1+b0+a1+/a0).(/b1+b0+/a1+a0).(/b1+/b0+a1+a0).(/b1+/b0+a1+/a0).(/b1+/b0+/a1+a0).(/b1+/b0+/a1+/a0)
 
 3.úkol
 
