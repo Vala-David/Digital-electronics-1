@@ -2,6 +2,13 @@ link na repozitář: https://github.com/Vala-David/Digital-electronics-1
 
 1. úkol
 
+Conect|Switch|LED
+------|------|---
+0     |1     |2 
+
+
+
+
 2. úkol
 ```vhdl
 architecture Behavioral of mux_2bit_4to1 is
