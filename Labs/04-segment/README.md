@@ -93,8 +93,50 @@ p_stimulus : process
     end process p_stimulus;
 end Behavioral;
 ```
+
 link na obrázek simulace: https://github.com/Vala-David/Digital-electronics-1/blob/main/Labs/04-segment/images/sim.png
 
 ```vhdl
+entity top is
+    Port 
+    ( 
+        SW : in  STD_LOGIC_VECTOR (4 - 1downto 0);
+        CA : out STD_LOGIC;
+        CB : out STD_LOGIC;
+        CC : out STD_LOGIC;
+        CD : out STD_LOGIC;
+        CE : out STD_LOGIC;
+        CF : out STD_LOGIC;
+        CG : out STD_LOGIC;
+        
+        LED : out STD_LOGIC_VECTOR (8 - 1downto 0);
+        AN  : out STD_LOGIC_VECTOR (8 - 1downto 0)
+     );
+end top;
+
+architecture Behavioral of top is
+begin
+    hex2seg : entity work.hex_7seg
+        port map(
+            hex_i    => SW,
+            seg_o(6) => CA,
+            seg_o(5) => CB,
+            seg_o(4) => CC,
+            seg_o(3) => CD,
+            seg_o(2) => CE,
+            seg_o(1) => CF,
+            seg_o(0) => CG
+        );
+    
+    AN <= b"1111_0111";
+    LED(3 downto 0) <= SW;
+end Behavioral;
 ```
+
+3. úkol
+
+
+
+
+
 
