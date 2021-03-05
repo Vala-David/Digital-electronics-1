@@ -93,7 +93,7 @@ p_stimulus : process
     end process p_stimulus;
 end Behavioral;
 ```
-
+link na obrázek simulace: https://github.com/Vala-David/Digital-electronics-1/blob/main/Labs/04-segment/images/sim.png
 
 ```vhdl
 ```
