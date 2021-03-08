@@ -154,6 +154,24 @@ Hex|Inputs|LED4|LED5|LED6|LED7|
  E | 1110 | 0  | 1  | 0  | 0  |
  F | 1111 | 0  | 1  | 1  | 0  | 
 
-
+```vhdl
+    LED(4) <= '1' when (SW = "0000") else '0';
+    
+    LED(5) <= '1' when (SW > "1001") else '0';
+    
+    LED(6) <= '1' when (SW = "0001");
+    LED(6) <= '1' when (SW = "0011");
+    LED(6) <= '1' when (SW = "0101");
+    LED(6) <= '1' when (SW = "0111");
+    LED(6) <= '1' when (SW = "1001");
+    LED(6) <= '1' when (SW = "1011");
+    LED(6) <= '1' when (SW = "1101");
+    LED(6) <= '1' when (SW = "1111");
+    
+    LED(7) <= '1' when (SW = "0001"); 
+    LED(7) <= '1' when (SW = "0010");
+    LED(7) <= '1' when (SW = "0100");
+    LED(7) <= '1' when (SW = "1000"); 
+```
 
 
