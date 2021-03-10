@@ -174,4 +174,8 @@ Hex|Inputs|LED4|LED5|LED6|LED7|
     LED(7) <= '1' when (SW = "1000"); 
 ```
 
+link na obrázek simulace: https://github.com/Vala-David/Digital-electronics-1/blob/main/Labs/04-segment/images/top%20sim.png
+akorát nevím proč místo bin ukazuje UUU, i když jsem to dal jako top
+
+
 
