@@ -12,3 +12,28 @@ link na repozitář: https://github.com/Vala-David/Digital-electronics-1
 |    1 sec    |     100 000 000	    |      x"5F5_E100"           |   b"0101_1111_0101_1110_0001_0000_0000"   |
 
 2. úkol
+
+```vhdl
+begin
+    p_cnt_up_down : process(clk)
+    begin
+        if rising_edge(clk) then
+        
+            if (reset = '1') then               
+                s_cnt_local <= (others => '0'); 
+
+            elsif (en_i = '1') then       
+
+                s_cnt_local <= s_cnt_local + 1;
+
+            end if;
+        end if;
+    end process p_cnt_up_down;
+
+    cnt_o <= std_logic_vector(s_cnt_local);
+
+end architecture behavioral;
+```
+
+```vhdl
+```
