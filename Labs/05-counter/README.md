@@ -11,7 +11,7 @@ link na repozitář: https://github.com/Vala-David/Digital-electronics-1
 |   500 ms    |     50 000 000      |      x"2FA_F080"           |   b"0010_1111_1010_1111_0000_1000_0000"   |
 |    1 sec    |     100 000 000	    |      x"5F5_E100"           |   b"0101_1111_0101_1110_0001_0000_0000"   |
 
-2. úkol
+2.úkol
 
 ```vhdl
 begin
@@ -68,4 +68,12 @@ end architecture behavioral;
 end architecture testbench;
 ```
 ![cnt_up_down_sim](https://user-images.githubusercontent.com/78855571/111025307-8e1cd080-83e3-11eb-917e-23f4e9524d6c.png)
+
+3.úkol
+
+
+
+
+
+
 
