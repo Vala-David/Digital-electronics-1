@@ -100,7 +100,7 @@ begin
         port map(
             clk   => CLK100MHZ,
             reset => BTNC,
-            ce_o  => s_en,
+            ce_o  => s_en
         );
     
     bin_cnt0 : entity work.cnt_up_down
@@ -130,8 +130,6 @@ begin
         );
         
     AN <= b"1111_1110";
-
-end architecture Behavioral;
 ```
 
 
