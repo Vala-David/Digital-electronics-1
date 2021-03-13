@@ -36,4 +36,36 @@ end architecture behavioral;
 ```
 
 ```vhdl
+    p_reset_gen : process
+    begin
+        s_reset <= '0';
+        wait for 12 ns;
+
+        s_reset <= '1';
+        wait for 73 ns;
+
+        s_reset <= '0';
+        wait;
+    end process p_reset_gen;
+
+    p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;
+
+        s_en     <= '1';
+        
+        s_cnt_up <= '1';
+        wait for 380 ns;
+        s_cnt_up <= '0';
+        wait for 220 ns;
+
+        s_en     <= '0';
+
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
+
+end architecture testbench;
 ```
+![cnt_up_down_sim](https://user-images.githubusercontent.com/78855571/111025307-8e1cd080-83e3-11eb-917e-23f4e9524d6c.png)
+
