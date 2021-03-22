@@ -2,6 +2,8 @@ link na repozitář: https://github.com/Vala-David/Digital-electronics-1
 
 1.úkol
 
+![cvik1](https://user-images.githubusercontent.com/78855571/112059121-bd59dd00-8b5b-11eb-9948-c036287c015e.PNG)
+
 2.úkol
 ```vhdl
 p_mux : process(s_cnt, data0_i, data1_i, data2_i, data3_i, dp_i)
