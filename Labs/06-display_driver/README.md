@@ -120,6 +120,10 @@ entity top is
            AN         : out STD_LOGIC_VECTOR (8-1 downto 0));   
 end top;
 
+
+![sim](https://user-images.githubusercontent.com/78855571/112058746-4290c200-8b5b-11eb-89f8-b7a99599ba9d.PNG)
+
+
 architecture Behavioral of top is
 
 begin
