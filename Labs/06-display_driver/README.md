@@ -171,5 +171,3 @@ begin
 
 end architecture Behavioral;
 ```
-
-3.úkol
