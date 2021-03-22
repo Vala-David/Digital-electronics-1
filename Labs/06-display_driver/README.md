@@ -102,6 +102,8 @@ begin
     
 end architecture testbench;
 ```
+![sim](https://user-images.githubusercontent.com/78855571/112058977-8e436b80-8b5b-11eb-9698-6e975198a24b.PNG)
+
 ```vhdl
 entity top is
      Port ( CLK100MHZ : in  STD_LOGIC;
@@ -119,8 +121,6 @@ entity top is
            DP         : out STD_LOGIC; 
            AN         : out STD_LOGIC_VECTOR (8-1 downto 0));   
 end top;
-
-link na obrázek:
 
 architecture Behavioral of top is
 
