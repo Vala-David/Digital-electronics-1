@@ -27,4 +27,5 @@ link na repozitář: https://github.com/Vala-David/Digital-electronics-1
 |1|0 |1     |Toggle|
 |1|1 |0     |Toggle|
 
+2.úkol
 
