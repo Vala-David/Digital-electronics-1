@@ -237,8 +237,63 @@ end Behavioral;
 ```
 TESTBENCH
 ```vhdl
+p_reset_gen : process
+    begin
+        s_rst    <= '0';
+        wait for 100 ns;
+        s_rst    <= '1'; 
+         wait for 80 ns;
+        s_rst    <= '0';
+        wait;
+    end process p_reset_gen;
 ```
 ```vhdl
+p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;
+
+        s_j <= '1';
+        s_k <= '0';
+        wait for 10ns;
+        assert (s_q = '1' and s_q_bar = '0');
+
+        s_j <= '0';
+        s_k <= '1';
+        wait for 10ns;
+        assert (s_q = '0' and s_q_bar = '1');
+
+        s_j <= '1';
+        s_k <= '0';
+        wait for 10ns;
+        assert (s_q = '1' and s_q_bar = '0');
+
+        s_j <= '0';
+        s_k <= '1';
+        wait for 10ns;
+        assert (s_q = '0' and s_q_bar = '1');
+
+        s_j <= '1';
+        s_k <= '1';
+        wait for 10ns;
+        assert (s_q = '1' and s_q_bar = '0');
+
+        s_j <= '1';
+        s_k <= '1';
+        wait for 10ns;
+        assert (s_q = '0' and s_q_bar = '1');
+
+        s_j <= '1';
+        s_k <= '1';
+        wait for 10ns;
+        assert (s_q = '1' and s_q_bar = '0');
+
+        s_j <= '0';
+        s_k <= '0';
+        wait for 10ns;
+        assert (s_q = '1' and s_q_bar = '0');
+        report "Stimulus process ended" severity note;
+        wait;
+    end process p_stimulus;
 ```
 
 
