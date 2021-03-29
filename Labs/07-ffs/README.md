@@ -97,6 +97,46 @@ p_d_ff_arst : process(clk, arst)
     end if;
     end process p_d_ff_arst;
 ```
+```vhdl
+p_reset_gen : process
+        begin
+            s_arst <= '0';
+            wait for 12 ns;
+            s_arst <= '1';
+            wait for 30 ns;
+            s_arst <= '0';
+            wait;
+        end process p_reset_gen;
+```
+```vhdl
+p_stimulus : process
+        begin
+            report "Stimulus process started" severity note;
+            s_d <= '1';
+            wait for 10ns;
+            assert (s_q = '0' and s_q_bar = '1');
+            s_d <= '0';
+            wait for 10ns;
+            assert (s_q = '0' and s_q_bar = '1');
+            s_d <= '1';
+            wait for 10ns;
+            assert (s_q = '1' and s_q_bar = '0');
+            s_d <= '0';
+            wait for 10ns;
+            assert (s_q = '0' and s_q_bar = '1');
+            wait for 20ns;
+            s_d <= '1';
+            wait for 10ns;
+            assert (s_q = '0' and s_q_bar = '1');
+            report "Stimulus process ended" severity note;
+            wait;
+        end process p_stimulus;
+```
+
+
+
+
+b)
 TESTBENCH
 ```vhdl
 p_clk_gen : process
