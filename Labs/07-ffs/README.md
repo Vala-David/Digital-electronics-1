@@ -82,3 +82,26 @@ p_stimulus : process
 ```
 ![sim d_latch](https://user-images.githubusercontent.com/78855571/112806493-1bfcea80-9077-11eb-9fe1-53e6ec39b356.png)
 
+3.úkol
+
+a)
+```vhdl
+p_d_ff_arst : process(clk, arst)
+    begin
+        if (arst = '1') then
+            q <= '0';
+            q_bar <= '1';
+        elsif rising_edge(clk) then
+            q <= d;
+            q_bar <= not d;
+    end if;
+    end process p_d_ff_arst;
+```
+```vhdl
+```
+
+
+
+
+
+
