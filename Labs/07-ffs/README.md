@@ -1,3 +1,4 @@
+![schm](https://user-images.githubusercontent.com/78855571/112821549-1effd700-9087-11eb-9042-eec46b6ee939.png)
 link na repozitář: https://github.com/Vala-David/Digital-electronics-1
 
 1.úkol:
@@ -298,5 +299,6 @@ p_stimulus : process
 ![sim jk_ff_arst](https://user-images.githubusercontent.com/78855571/112819501-f37bed00-9084-11eb-9517-bc2c28e74c69.png)
 
 4.úkol
+![schm](https://user-images.githubusercontent.com/78855571/112821559-22935e00-9087-11eb-812f-801d18b7481d.png)
 
 
