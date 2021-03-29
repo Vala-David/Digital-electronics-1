@@ -132,9 +132,7 @@ p_stimulus : process
             wait;
         end process p_stimulus;
 ```
-
-
-
+![sim d_ff_latch](https://user-images.githubusercontent.com/78855571/112815321-7a7a9680-9080-11eb-98cb-d608556a423e.png)
 
 b)
 TESTBENCH
