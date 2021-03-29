@@ -28,4 +28,18 @@ link na repozitář: https://github.com/Vala-David/Digital-electronics-1
 |1|1 |0     |Toggle|
 
 2.úkol
+```vhdl
+p_d_latch : process(en, d, arst)
+    begin
+        if (arst = '1') then
+            q <= '0';
+            q_bar <= '1';
+        elsif (en = '1') then
+            q <= d;
+            q_bar <= not d;
+    end if;
+    end process p_d_latch;
+```
+```vhdl
 
+```
