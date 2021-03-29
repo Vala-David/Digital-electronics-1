@@ -97,6 +97,7 @@ p_d_ff_arst : process(clk, arst)
     end if;
     end process p_d_ff_arst;
 ```
+TESTBENCH
 ```vhdl
 p_reset_gen : process
         begin
@@ -135,6 +136,20 @@ p_stimulus : process
 ![sim d_ff_latch](https://user-images.githubusercontent.com/78855571/112815321-7a7a9680-9080-11eb-98cb-d608556a423e.png)
 
 b)
+```vhdl
+p_d_ff_arst : process(clk)
+    begin
+        if rising_edge(clk) then
+        if (rst = '1') then
+            q <= '0';
+            q_bar <= '1';
+        else
+            q <= d;
+            q_bar <= not d;
+        end if;
+        end if;
+    end process p_d_ff_arst;
+```
 TESTBENCH
 ```vhdl
 p_clk_gen : process
