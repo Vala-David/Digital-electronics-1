@@ -295,6 +295,7 @@ p_stimulus : process
         wait;
     end process p_stimulus;
 ```
+![sim jk_ff_arst](https://user-images.githubusercontent.com/78855571/112819501-f37bed00-9084-11eb-9517-bc2c28e74c69.png)
 
 
 
