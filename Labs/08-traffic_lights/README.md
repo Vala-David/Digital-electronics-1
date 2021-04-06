@@ -27,6 +27,9 @@ link na repozitář: https://github.com/Vala-David/Digital-electronics-1
 |LD17   |N16,R11,G14|1,0,0|1,1,0 |0,1,0|
 
 2.úkol
+
+![IMG_20210406_1105513](https://user-images.githubusercontent.com/78855571/113687220-63632680-96c8-11eb-9697-856e77506ad0.jpg)
+
 ```vhdl
 p_traffic_fsm : process(clk)
     begin
@@ -139,6 +142,8 @@ p_output_fsm : process(s_state)
 |STOP2     |red   |red   |1s   |
 |SOUTH_GO  |green |red   |4s   |
 |SOUTH_WAIT|yellow|red   |2s   |
+
+![IMG_20210406_1105598](https://user-images.githubusercontent.com/78855571/113687253-6bbb6180-96c8-11eb-87cf-6eec72278a94.jpg)
 
 ```vhdl
 p_traffic_fsm : process(clk)
