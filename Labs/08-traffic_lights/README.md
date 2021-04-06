@@ -140,6 +140,80 @@ p_output_fsm : process(s_state)
 |SOUTH_GO  |green |red   |4s   |
 |SOUTH_WAIT|yellow|red   |2s   |
 
+```vhdl
+p_traffic_fsm : process(clk)
+    begin
+        if rising_edge(clk) then
+            if (reset = '1') then      
+                s_state <= STOP1 ;    
+                s_cnt   <= std_logic_vector(c_ZERO);      
 
+            elsif (s_en = '1') then
+                case s_state is
+                    when STOP1 =>
+                        if (unsigned(s_cnt) < c_DELAY_1SEC) then
+                            s_cnt <= std_logic_vector(unsigned(s_cnt) + 1);
+                        else
+                            s_state <= WEST_GO;
+                            s_cnt   <= std_logic_vector(c_ZERO);
+                        end if;
+
+                    when WEST_GO =>
+                        if (unsigned(s_cnt) < c_DELAY_4SEC) then
+                            s_cnt <= std_logic_vector(unsigned(s_cnt) + 1);
+                        else
+                            if (sens_w = '1' and sens_s = '0') then  
+                                s_state <= WEST_GO;
+                            else
+                                s_state <= WEST_WAIT;
+                            end if;
+                            s_cnt   <= std_logic_vector(c_ZERO);
+                        end if;
+                        
+                    when WEST_WAIT =>
+                        if (unsigned(s_cnt) < c_DELAY_2SEC) then
+                            s_cnt <= std_logic_vector(unsigned(s_cnt) + 1);
+                        else
+                            s_state <= STOP2;
+                            s_cnt   <= std_logic_vector(c_ZERO);
+                        end if;
+                        
+                    when STOP2 =>
+                        if (unsigned(s_cnt) < c_DELAY_1SEC) then
+                            s_cnt <= std_logic_vector(unsigned(s_cnt) + 1);
+                        else
+                            s_state <= SOUTH_GO;
+                            s_cnt   <= std_logic_vector(c_ZERO);
+                        end if;
+                        
+                    when SOUTH_GO =>
+                        if (unsigned(s_cnt) < c_DELAY_4SEC) then
+                            s_cnt <= std_logic_vector(unsigned(s_cnt) + 1);
+                        else
+                            if (sens_w = '0' and sens_s = '1') then  
+                                s_state <= SOUTH_GO;
+                            else
+                                s_state <= SOUTH_WAIT;
+                            end if;
+                            
+                            s_cnt   <= std_logic_vector(c_ZERO);
+                        end if;
+                        
+                    when SOUTH_WAIT =>
+                        if (unsigned(s_cnt) < c_DELAY_2SEC) then
+                            s_cnt <= std_logic_vector(unsigned(s_cnt) + 1);
+                        else
+                            s_state <= STOP1;
+                            s_cnt   <= std_logic_vector(c_ZERO);
+                        end if;
+                    
+                    when others =>
+                        s_state <= STOP1;
+
+                end case;
+            end if; 
+        end if;
+    end process p_traffic_fsm;
+```
 
 
