@@ -31,9 +31,9 @@ link na repozitář: https://github.com/Vala-David/Digital-electronics-1
 p_traffic_fsm : process(clk)
     begin
         if rising_edge(clk) then
-            if (reset = '1') then       -- Synchronous reset
-                s_state <= STOP1 ;      -- Set initial state
-                s_cnt   <= std_logic_vector(c_ZERO);      -- Clear all bits
+            if (reset = '1') then      
+                s_state <= STOP1 ;      
+                s_cnt   <= std_logic_vector(c_ZERO);     
 
             elsif (s_en = '1') the
                 case s_state is
