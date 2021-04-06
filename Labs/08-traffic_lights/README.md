@@ -128,3 +128,18 @@ p_output_fsm : process(s_state)
         end case;
     end process p_output_fsm;
 ```
+
+3.úkol
+
+|State     |South |West  |Delay|
+|----------|------|------|-----|
+|STOP1     |red   |red   |1s   |
+|WEST_GO   |red   |green |4s   |
+|WEST_WAIT |red   |yellow|2s   |
+|STOP2     |red   |red   |1s   |
+|SOUTH_GO  |green |red   |4s   |
+|SOUTH_WAIT|yellow|red   |2s   |
+
+
+
+
